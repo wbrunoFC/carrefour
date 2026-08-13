@@ -130,7 +130,7 @@ Erros de validação aparecem; alerta de sucesso não é exibido.
 
 ## Cenários
 
-### LOGIN-001 — Login com dados válidos de formato
+### AUTH-LOGIN-001 — Login com dados válidos de formato
 
 **Dado que** o usuário está na categoria Login  
 **Quando** informar e-mail em formato válido  
@@ -141,7 +141,7 @@ Erros de validação aparecem; alerta de sucesso não é exibido.
 
 ---
 
-### LOGIN-002 — Login com e-mail inválido
+### AUTH-LOGIN-002 — Login com e-mail inválido
 
 **Dado que** o usuário está na categoria Login  
 **Quando** informar e-mail inválido  
@@ -151,7 +151,7 @@ Erros de validação aparecem; alerta de sucesso não é exibido.
 
 ---
 
-### LOGIN-003 — Login com senha curta
+### AUTH-LOGIN-003 — Login com senha curta
 
 **Dado que** o usuário está na categoria Login  
 **Quando** informar senha com menos de 8 caracteres  

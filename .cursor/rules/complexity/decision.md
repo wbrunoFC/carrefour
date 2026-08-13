@@ -111,7 +111,7 @@ Orquestração pesada → maior complexidade.
 3. Aplicar overrides (§8)
 4. Se ainda incerto → pontuação (§7)
 5. Determinar HIGH | MEDIUM | LOW
-6. Registrar no page object / .feature
+6. Registrar no page object (`pages/**/*.json`) e/ou no cenário em `features/**/*.md`
 7. Se MEDIUM/HIGH, registrar motivo em 1 linha (opcional no JSON: note)
 ```
 
@@ -198,14 +198,16 @@ Nos page objects (`android.json` / `ios.json`):
 
 Valores: `high` | `medium` | `low` (minúsculos no JSON; tags podem usar `HIGH`/`MEDIUM`/`LOW`).
 
-No `.feature` (cenário):
+No cenário (`features/**/*.md`):
 
-```gherkin
-  Scenario: CT001 - Login com dados válidos de formato
-    Criticality: HIGH
-    Flakiness: LOW
-    Complexity: LOW
+```markdown
+### AUTH-LOGIN-001 — Login com dados válidos de formato
+- Criticality: HIGH
+- Flakiness: LOW
+- Complexity: LOW
 ```
+
+No elemento (`pages/**/*.json`), `id` = `EL00N` (não Scenario ID).
 
 Tags sugeridas: `@complexity:high` · `@complexity:medium` · `@complexity:low`.
 

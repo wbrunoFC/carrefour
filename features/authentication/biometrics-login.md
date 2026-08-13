@@ -99,7 +99,7 @@ Sem alerta de sucesso; usuário permanece no formulário.
 
 ## Cenários
 
-### BIO-001 — Login biométrico com sucesso
+### AUTH-BIOMETRICS-LOGIN-001 — Login biométrico com sucesso
 
 **Dado que** o dispositivo tem biometria matriculada  
 **E** o usuário está em Login  
@@ -109,7 +109,7 @@ Sem alerta de sucesso; usuário permanece no formulário.
 
 ---
 
-### BIO-002 — Cancelar biometria
+### AUTH-BIOMETRICS-LOGIN-002 — Cancelar biometria
 
 **Dado que** o prompt biométrico está aberto  
 **Quando** o usuário cancelar  
@@ -118,7 +118,7 @@ Sem alerta de sucesso; usuário permanece no formulário.
 
 ---
 
-### BIO-003 — Sem biometria no dispositivo
+### AUTH-BIOMETRICS-LOGIN-003 — Sem biometria no dispositivo
 
 **Dado que** não há biometria enrolled  
 **Quando** abrir Login  

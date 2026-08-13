@@ -3,7 +3,7 @@
   "platform": "ios",
   "elements": {
     "tabWebview": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Aba Webview",
       "type": "tab",
       "criticality": "medium",
@@ -15,7 +15,7 @@
       }
     },
     "menuItem": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Item de menu Webview",
       "type": "link",
       "criticality": "medium",
@@ -27,7 +27,7 @@
       }
     },
     "webView": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Componente WebView",
       "type": "webview",
       "criticality": "medium",

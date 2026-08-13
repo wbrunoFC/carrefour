@@ -42,7 +42,7 @@ Flakiness: HIGH
 ## Implicações
 
 - Prioridade máxima de estabilização (especialmente se Criticality for HIGH — ver matriz em [decision.md](./decision.md)).
-- Registrar `FlakinessReason` e `Cause` no `.feature`.
+- Registrar `FlakinessReason` e `Cause` em `features/**/*.md` (cenário) e/ou metadata do teste.
 - Não mascarar com retry silencioso; retry só com rastreamento.
 - Quarantine / despromoção do gate só com acordo explícito do time.
 

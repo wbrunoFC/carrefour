@@ -3,7 +3,7 @@
   "platform": "ios",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Permissions",
       "type": "screen",
       "criticality": "high",
@@ -15,7 +15,7 @@
       }
     },
     "camera": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Switch câmera",
       "type": "switch",
       "criticality": "high",
@@ -27,7 +27,7 @@
       }
     },
     "microphone": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Switch microfone",
       "type": "switch",
       "criticality": "high",
@@ -39,7 +39,7 @@
       }
     },
     "location": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Switch localização",
       "type": "switch",
       "criticality": "high",
@@ -51,7 +51,7 @@
       }
     },
     "photos": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Switch fotos",
       "type": "switch",
       "criticality": "high",

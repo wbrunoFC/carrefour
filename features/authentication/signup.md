@@ -109,7 +109,7 @@ Mensagem Please enter the same password; sem sucesso.
 
 ## Cenários
 
-### SIGNUP-001 — Cadastro com dados válidos de formato
+### AUTH-SIGNUP-001 — Cadastro com dados válidos de formato
 
 **Dado que** o usuário está em Sign up  
 **Quando** informar e-mail válido, senha ≥ 8 e confirmação igual  
@@ -118,7 +118,7 @@ Mensagem Please enter the same password; sem sucesso.
 
 ---
 
-### SIGNUP-002 — Confirmação de senha divergente
+### AUTH-SIGNUP-002 — Confirmação de senha divergente
 
 **Dado que** o usuário está em Sign up  
 **Quando** informar confirmação diferente da senha  
@@ -128,7 +128,7 @@ Mensagem Please enter the same password; sem sucesso.
 
 ---
 
-### SIGNUP-003 — E-mail inválido no cadastro
+### AUTH-SIGNUP-003 — E-mail inválido no cadastro
 
 **Dado que** o usuário está em Sign up  
 **Quando** informar e-mail inválido  

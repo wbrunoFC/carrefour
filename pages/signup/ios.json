@@ -3,7 +3,7 @@
   "platform": "ios",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Login",
       "type": "screen",
       "criticality": "high",
@@ -15,7 +15,7 @@
       }
     },
     "signUpTab": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Categoria Sign up",
       "type": "button",
       "criticality": "high",
@@ -27,7 +27,7 @@
       }
     },
     "loginTab": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Categoria Login",
       "type": "button",
       "criticality": "medium",
@@ -39,7 +39,7 @@
       }
     },
     "email": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Campo de e-mail",
       "type": "input",
       "criticality": "high",
@@ -51,7 +51,7 @@
       }
     },
     "password": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Campo de senha",
       "type": "input",
       "criticality": "high",
@@ -63,7 +63,7 @@
       }
     },
     "confirmPassword": {
-      "id": "CT006",
+      "id": "EL006",
       "name": "Campo confirmar senha",
       "type": "input",
       "criticality": "high",
@@ -75,7 +75,7 @@
       }
     },
     "signUpButton": {
-      "id": "CT007",
+      "id": "EL007",
       "name": "Botão SIGN UP",
       "type": "button",
       "criticality": "high",

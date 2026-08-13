@@ -3,7 +3,7 @@
   "platform": "android",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Drag",
       "type": "screen",
       "criticality": "low",
@@ -15,7 +15,7 @@
       }
     },
     "renew": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Botão Retry/Renew",
       "type": "button",
       "criticality": "low",
@@ -27,7 +27,7 @@
       }
     },
     "dragl1": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Peça l1",
       "type": "draggable",
       "criticality": "low",
@@ -39,7 +39,7 @@
       }
     },
     "dragl2": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Peça l2",
       "type": "draggable",
       "criticality": "low",
@@ -51,7 +51,7 @@
       }
     },
     "dragl3": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Peça l3",
       "type": "draggable",
       "criticality": "low",
@@ -63,7 +63,7 @@
       }
     },
     "dragc1": {
-      "id": "CT006",
+      "id": "EL006",
       "name": "Peça c1",
       "type": "draggable",
       "criticality": "low",
@@ -75,7 +75,7 @@
       }
     },
     "dragc2": {
-      "id": "CT007",
+      "id": "EL007",
       "name": "Peça c2",
       "type": "draggable",
       "criticality": "low",
@@ -87,7 +87,7 @@
       }
     },
     "dragc3": {
-      "id": "CT008",
+      "id": "EL008",
       "name": "Peça c3",
       "type": "draggable",
       "criticality": "low",
@@ -99,7 +99,7 @@
       }
     },
     "dragr1": {
-      "id": "CT009",
+      "id": "EL009",
       "name": "Peça r1",
       "type": "draggable",
       "criticality": "low",
@@ -111,7 +111,7 @@
       }
     },
     "dragr2": {
-      "id": "CT010",
+      "id": "EL010",
       "name": "Peça r2",
       "type": "draggable",
       "criticality": "low",
@@ -123,7 +123,7 @@
       }
     },
     "dragr3": {
-      "id": "CT011",
+      "id": "EL011",
       "name": "Peça r3",
       "type": "draggable",
       "criticality": "low",
@@ -135,7 +135,7 @@
       }
     },
     "dropl1": {
-      "id": "CT012",
+      "id": "EL012",
       "name": "Zona l1",
       "type": "dropzone",
       "criticality": "low",
@@ -147,7 +147,7 @@
       }
     },
     "dropl2": {
-      "id": "CT013",
+      "id": "EL013",
       "name": "Zona l2",
       "type": "dropzone",
       "criticality": "low",
@@ -159,7 +159,7 @@
       }
     },
     "dropl3": {
-      "id": "CT014",
+      "id": "EL014",
       "name": "Zona l3",
       "type": "dropzone",
       "criticality": "low",
@@ -171,7 +171,7 @@
       }
     },
     "dropc1": {
-      "id": "CT015",
+      "id": "EL015",
       "name": "Zona c1",
       "type": "dropzone",
       "criticality": "low",
@@ -183,7 +183,7 @@
       }
     },
     "dropc2": {
-      "id": "CT016",
+      "id": "EL016",
       "name": "Zona c2",
       "type": "dropzone",
       "criticality": "low",
@@ -195,7 +195,7 @@
       }
     },
     "dropc3": {
-      "id": "CT017",
+      "id": "EL017",
       "name": "Zona c3",
       "type": "dropzone",
       "criticality": "low",
@@ -207,7 +207,7 @@
       }
     },
     "dropr1": {
-      "id": "CT018",
+      "id": "EL018",
       "name": "Zona r1",
       "type": "dropzone",
       "criticality": "low",
@@ -219,7 +219,7 @@
       }
     },
     "dropr2": {
-      "id": "CT019",
+      "id": "EL019",
       "name": "Zona r2",
       "type": "dropzone",
       "criticality": "low",
@@ -231,7 +231,7 @@
       }
     },
     "dropr3": {
-      "id": "CT020",
+      "id": "EL020",
       "name": "Zona r3",
       "type": "dropzone",
       "criticality": "low",

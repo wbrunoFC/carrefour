@@ -81,7 +81,7 @@ _Nenhuma identificada no código._
 
 ## Cenários
 
-### MENU-001 — Abrir menu lateral
+### NAV-SIDE-MENU-001 — Abrir menu lateral
 
 **Dado que** o app está aberto  
 **Quando** tocar em Menu  
@@ -89,7 +89,7 @@ _Nenhuma identificada no código._
 
 ---
 
-### MENU-002 — Navegar por destino
+### NAV-SIDE-MENU-002 — Navegar por destino
 
 **Dado que** o Menu está aberto  
 **Quando** selecionar um destino  
@@ -97,7 +97,7 @@ _Nenhuma identificada no código._
 
 ---
 
-### MENU-003 — Fechar pelo backdrop
+### NAV-SIDE-MENU-003 — Fechar pelo backdrop
 
 **Dado que** o Menu está aberto  
 **Quando** tocar fora do painel  

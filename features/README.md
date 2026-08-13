@@ -28,6 +28,14 @@ features/
     └── data-secure.md
 ```
 
+## Scenario ID
+
+Formato: `<DOMAIN>-<FEATURE>-<NNN>` (ver [folder-tests.md](../.cursor/rules/architecture/folder-tests.md) §A.5).
+
+Exemplos: `AUTH-LOGIN-001`, `NAV-SIDE-MENU-001`, `DATA-DATA-SECURE-001`.
+
+Fonte canônica dos cenários = estes `.md`. Page objects em `pages/` usam Element ID `EL00N`, não Scenario ID.
+
 ## Nota crítica
 
 App é **demo de automação**, não produto Carrefour. Regras refletem comportamento observado no cliente (ex.: login simulado por formato de e-mail/senha), não backend real.

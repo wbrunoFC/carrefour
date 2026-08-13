@@ -3,7 +3,7 @@
   "platform": "android",
   "elements": {
     "menuButton": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Botão Menu",
       "type": "button",
       "criticality": "low",
@@ -15,7 +15,7 @@
       }
     },
     "panel": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Painel do menu",
       "type": "panel",
       "criticality": "low",
@@ -27,7 +27,7 @@
       }
     },
     "starWebview": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Estrela Webview",
       "type": "button",
       "criticality": "low",
@@ -39,7 +39,7 @@
       }
     },
     "starLogin": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Estrela Login",
       "type": "button",
       "criticality": "low",
@@ -51,7 +51,7 @@
       }
     },
     "starForms": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Estrela Forms",
       "type": "button",
       "criticality": "low",
@@ -63,7 +63,7 @@
       }
     },
     "starSwipe": {
-      "id": "CT006",
+      "id": "EL006",
       "name": "Estrela Swipe",
       "type": "button",
       "criticality": "low",
@@ -75,7 +75,7 @@
       }
     },
     "starDrag": {
-      "id": "CT007",
+      "id": "EL007",
       "name": "Estrela Drag",
       "type": "button",
       "criticality": "low",
@@ -87,7 +87,7 @@
       }
     },
     "starPermissions": {
-      "id": "CT008",
+      "id": "EL008",
       "name": "Estrela Permissions",
       "type": "button",
       "criticality": "low",
@@ -99,7 +99,7 @@
       }
     },
     "starData": {
-      "id": "CT009",
+      "id": "EL009",
       "name": "Estrela Data",
       "type": "button",
       "criticality": "low",

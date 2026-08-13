@@ -3,7 +3,7 @@
   "platform": "android",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Swipe",
       "type": "screen",
       "criticality": "low",
@@ -15,7 +15,7 @@
       }
     },
     "carousel": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Carrossel",
       "type": "carousel",
       "criticality": "low",
@@ -27,7 +27,7 @@
       }
     },
     "card": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Card do slide",
       "type": "card",
       "criticality": "low",
@@ -39,7 +39,7 @@
       }
     },
     "slideText": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Texto do slide",
       "type": "text",
       "criticality": "low",
@@ -51,7 +51,7 @@
       }
     },
     "logo": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Logo WebdriverIO",
       "type": "image",
       "criticality": "low",

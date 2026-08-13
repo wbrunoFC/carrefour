@@ -118,7 +118,7 @@ Mais difícil diagnosticar → maior risco de flaky.
 5. Aplicar overrides (§8)
 6. Se ainda incerto → pontuação (§7)
 7. Determinar HIGH | MEDIUM | LOW
-8. Registrar no .feature; se MEDIUM/HIGH, registrar motivo
+8. Registrar em `features/**/*.md` (cenário) e/ou metadata do teste; se MEDIUM/HIGH, registrar motivo
 ```
 
 Em dúvida entre dois níveis (e sem override): preferir o **mais alto** e documentar.
@@ -206,34 +206,31 @@ Registrar separadamente. Matriz de risco:
 | LOW | MEDIUM | Avaliar |
 | LOW | HIGH | Corrigir quando possível |
 
-## 12. Registro no `.feature`
+## 12. Registro no cenário (`features/**/*.md`)
 
-Armazenar só o resultado da classificação (e motivo se instável):
+Armazenar só o resultado da classificação (e motivo se instável).  
+**Não** usar `pages/**/*.feature` (proibido). Page objects usam Element ID `EL00N`.
 
-```gherkin
-Feature: Login
+```markdown
+### AUTH-LOGIN-001 — Login com credenciais válidas
+- Criticality: HIGH
+- Flakiness: LOW
 
-  Scenario: Login com credenciais válidas
-    ID: LOGIN-001
-    Criticality: HIGH
-    Flakiness: LOW
-
-    Given o usuário está na página de login
-    When informa credenciais válidas
-    And confirma o acesso
-    Then deve ser autenticado
+Given o usuário está na página de login  
+When informa credenciais válidas  
+And confirma o acesso  
+Then deve ser autenticado
 ```
 
 Com instabilidade:
 
-```gherkin
-  Scenario: Login com credenciais válidas
-    ID: LOGIN-001
-    Criticality: HIGH
-    Flakiness: MEDIUM
-    FlakinessReason:
-      - Falha ocasional no carregamento da página inicial
-      - Relacionado ao tempo de resposta do ambiente de teste
+```markdown
+### AUTH-LOGIN-001 — Login com credenciais válidas
+- Criticality: HIGH
+- Flakiness: MEDIUM
+- FlakinessReason:
+  - Falha ocasional no carregamento da página inicial
+  - Relacionado ao tempo de resposta do ambiente de teste
 ```
 
 Tags sugeridas: `@flakiness:high` · `@flakiness:medium` · `@flakiness:low`.

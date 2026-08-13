@@ -88,7 +88,7 @@ Alerta SecureStore com erro.
 
 ## Cenários
 
-### SEC-001 — Salvar no SecureStore
+### DATA-DATA-SECURE-001 — Salvar no SecureStore
 
 **Dado que** o usuário está no tier Secure storage  
 **Quando** salvar um valor  
@@ -97,7 +97,7 @@ Alerta SecureStore com erro.
 
 ---
 
-### SEC-002 — Limpar SecureStore
+### DATA-DATA-SECURE-002 — Limpar SecureStore
 
 **Dado que** há valor seguro  
 **Quando** tocar em Clear  
@@ -105,7 +105,7 @@ Alerta SecureStore com erro.
 
 ---
 
-### SEC-003 — Erro SecureStore
+### DATA-DATA-SECURE-003 — Erro SecureStore
 
 **Dado que** ocorre falha de SecureStore  
 **Quando** salvar  

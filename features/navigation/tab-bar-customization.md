@@ -88,7 +88,7 @@ Alerta Tab bar full; pin não é aplicado.
 
 ## Cenários
 
-### TABS-001 — Pin de tela com vaga
+### NAV-TAB-BAR-CUSTOMIZATION-001 — Pin de tela com vaga
 
 **Dado que** há menos de 5 pins  
 **Quando** o usuário ativar a estrela de Permissions  
@@ -96,7 +96,7 @@ Alerta Tab bar full; pin não é aplicado.
 
 ---
 
-### TABS-002 — Unpin de tela
+### NAV-TAB-BAR-CUSTOMIZATION-002 — Unpin de tela
 
 **Dado que** Forms está pinada  
 **Quando** o usuário desativar a estrela de Forms  
@@ -105,7 +105,7 @@ Alerta Tab bar full; pin não é aplicado.
 
 ---
 
-### TABS-003 — Limite da tab bar
+### NAV-TAB-BAR-CUSTOMIZATION-003 — Limite da tab bar
 
 **Dado que** já existem 5 pins  
 **Quando** tentar pinar outra tela  

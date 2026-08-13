@@ -87,7 +87,7 @@ Alerta Persisted KV com a mensagem de erro.
 
 ## Cenários
 
-### KV-001 — Salvar valor persistido
+### DATA-DATA-PERSISTED-KV-001 — Salvar valor persistido
 
 **Dado que** o usuário está no tier Persisted key-value  
 **Quando** salvar um valor  
@@ -96,7 +96,7 @@ Alerta Persisted KV com a mensagem de erro.
 
 ---
 
-### KV-002 — Limpar valor persistido
+### DATA-DATA-PERSISTED-KV-002 — Limpar valor persistido
 
 **Dado que** existe valor persistido  
 **Quando** tocar em Clear  
@@ -104,7 +104,7 @@ Alerta Persisted KV com a mensagem de erro.
 
 ---
 
-### KV-003 — Erro ao persistir
+### DATA-DATA-PERSISTED-KV-003 — Erro ao persistir
 
 **Dado que** ocorre falha de banco  
 **Quando** tentar salvar  

@@ -98,7 +98,7 @@ Peça retorna (spring) à origem; sem mensagem de erro.
 
 ## Cenários
 
-### DRAG-001 — Encaixar peça válida
+### DRAG-DRAG-001 — Encaixar peça válida
 
 **Dado que** o puzzle está incompleto  
 **Quando** arrastar uma peça até a zona correta  
@@ -106,7 +106,7 @@ Peça retorna (spring) à origem; sem mensagem de erro.
 
 ---
 
-### DRAG-002 — Soltar em local inválido
+### DRAG-DRAG-002 — Soltar em local inválido
 
 **Dado que** o usuário arrasta uma peça  
 **Quando** soltar fora da zona correta  
@@ -114,7 +114,7 @@ Peça retorna (spring) à origem; sem mensagem de erro.
 
 ---
 
-### DRAG-003 — Concluir puzzle
+### DRAG-DRAG-003 — Concluir puzzle
 
 **Dado que** 8 peças já estão corretas  
 **Quando** encaixar a nona  
@@ -122,7 +122,7 @@ Peça retorna (spring) à origem; sem mensagem de erro.
 
 ---
 
-### DRAG-004 — Retry
+### DRAG-DRAG-004 — Retry
 
 **Dado que** o puzzle foi concluído  
 **Quando** tocar em Retry  

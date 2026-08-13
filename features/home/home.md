@@ -81,7 +81,7 @@ _Nenhuma identificada no código._
 
 ## Cenários
 
-### HOME-001 — Visualizar tela Home
+### HOME-HOME-001 — Visualizar tela Home
 
 **Dado que** o aplicativo está aberto  
 **Quando** o usuário acessar a aba Home  
@@ -89,7 +89,7 @@ _Nenhuma identificada no código._
 
 ---
 
-### HOME-002 — Scroll na Home
+### HOME-HOME-002 — Scroll na Home
 
 **Dado que** o usuário está na Home  
 **Quando** rolar a tela verticalmente  

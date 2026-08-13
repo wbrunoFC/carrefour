@@ -82,7 +82,7 @@ Página pode não carregar; app não define alerta próprio de erro de rede nest
 
 ## Cenários
 
-### WEB-001 — Abrir WebView
+### WEBVIEW-WEBVIEW-001 — Abrir WebView
 
 **Dado que** o aplicativo está aberto  
 **Quando** o usuário acessar WebView  
@@ -90,7 +90,7 @@ Página pode não carregar; app não define alerta próprio de erro de rede nest
 
 ---
 
-### WEB-002 — Conteúdo carregado
+### WEBVIEW-WEBVIEW-002 — Conteúdo carregado
 
 **Dado que** há conectividade  
 **Quando** o carregamento concluir  

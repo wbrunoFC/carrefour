@@ -3,7 +3,7 @@
   "platform": "ios",
   "elements": {
     "menuButton": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Botão Menu",
       "type": "button",
       "criticality": "medium",
@@ -15,7 +15,7 @@
       }
     },
     "modal": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Modal do menu",
       "type": "modal",
       "criticality": "medium",
@@ -27,7 +27,7 @@
       }
     },
     "panel": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Painel do menu",
       "type": "panel",
       "criticality": "medium",
@@ -39,7 +39,7 @@
       }
     },
     "itemHome": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Item Home",
       "type": "link",
       "criticality": "medium",
@@ -51,7 +51,7 @@
       }
     },
     "itemWebview": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Item Webview",
       "type": "link",
       "criticality": "medium",
@@ -63,7 +63,7 @@
       }
     },
     "itemLogin": {
-      "id": "CT006",
+      "id": "EL006",
       "name": "Item Login",
       "type": "link",
       "criticality": "high",
@@ -75,7 +75,7 @@
       }
     },
     "itemForms": {
-      "id": "CT007",
+      "id": "EL007",
       "name": "Item Forms",
       "type": "link",
       "criticality": "medium",
@@ -87,7 +87,7 @@
       }
     },
     "itemSwipe": {
-      "id": "CT008",
+      "id": "EL008",
       "name": "Item Swipe",
       "type": "link",
       "criticality": "low",
@@ -99,7 +99,7 @@
       }
     },
     "itemDrag": {
-      "id": "CT009",
+      "id": "EL009",
       "name": "Item Drag",
       "type": "link",
       "criticality": "low",
@@ -111,7 +111,7 @@
       }
     },
     "itemPermissions": {
-      "id": "CT010",
+      "id": "EL010",
       "name": "Item Permissions",
       "type": "link",
       "criticality": "high",
@@ -123,7 +123,7 @@
       }
     },
     "itemData": {
-      "id": "CT011",
+      "id": "EL011",
       "name": "Item Data",
       "type": "link",
       "criticality": "medium",

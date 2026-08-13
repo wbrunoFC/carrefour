@@ -87,7 +87,7 @@ Alerta com título SQLite.
 
 ## Cenários
 
-### SQL-001 — Salvar no SQLite explícito
+### DATA-DATA-SQLITE-001 — Salvar no SQLite explícito
 
 **Dado que** o usuário está no tier SQLite  
 **Quando** salvar um valor  
@@ -96,7 +96,7 @@ Alerta com título SQLite.
 
 ---
 
-### SQL-002 — Limpar SQLite
+### DATA-DATA-SQLITE-002 — Limpar SQLite
 
 **Dado que** há valor no SQLite  
 **Quando** limpar  
@@ -104,7 +104,7 @@ Alerta com título SQLite.
 
 ---
 
-### SQL-003 — Erro SQLite
+### DATA-DATA-SQLITE-003 — Erro SQLite
 
 **Dado que** ocorre falha de banco  
 **Quando** salvar  

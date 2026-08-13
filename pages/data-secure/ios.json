@@ -3,7 +3,7 @@
   "platform": "ios",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Data Management",
       "type": "screen",
       "criticality": "high",
@@ -15,7 +15,7 @@
       }
     },
     "input": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Campo Secure",
       "type": "input",
       "criticality": "high",
@@ -27,7 +27,7 @@
       }
     },
     "readout": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Leitura Secure",
       "type": "text",
       "criticality": "high",
@@ -39,7 +39,7 @@
       }
     },
     "save": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Botão Save Secure",
       "type": "button",
       "criticality": "high",
@@ -51,7 +51,7 @@
       }
     },
     "clear": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Botão Clear Secure",
       "type": "button",
       "criticality": "high",

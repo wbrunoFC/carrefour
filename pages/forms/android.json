@@ -3,7 +3,7 @@
   "platform": "android",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Forms",
       "type": "screen",
       "criticality": "medium",
@@ -15,7 +15,7 @@
       }
     },
     "textInput": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Campo de texto",
       "type": "input",
       "criticality": "medium",
@@ -27,7 +27,7 @@
       }
     },
     "inputResult": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Texto digitado",
       "type": "text",
       "criticality": "medium",
@@ -39,7 +39,7 @@
       }
     },
     "switch": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Switch",
       "type": "switch",
       "criticality": "medium",
@@ -51,7 +51,7 @@
       }
     },
     "switchText": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Texto do switch",
       "type": "text",
       "criticality": "low",
@@ -63,7 +63,7 @@
       }
     },
     "dropdown": {
-      "id": "CT006",
+      "id": "EL006",
       "name": "Dropdown",
       "type": "dropdown",
       "criticality": "medium",
@@ -75,7 +75,7 @@
       }
     },
     "dropdownPicker": {
-      "id": "CT007",
+      "id": "EL007",
       "name": "Picker do dropdown",
       "type": "picker",
       "criticality": "medium",
@@ -87,7 +87,7 @@
       }
     },
     "dropdownChevron": {
-      "id": "CT008",
+      "id": "EL008",
       "name": "Chevron do dropdown",
       "type": "icon",
       "criticality": "low",
@@ -99,7 +99,7 @@
       }
     },
     "activeButton": {
-      "id": "CT009",
+      "id": "EL009",
       "name": "Botão Active",
       "type": "button",
       "criticality": "medium",
@@ -111,7 +111,7 @@
       }
     },
     "inactiveButton": {
-      "id": "CT010",
+      "id": "EL010",
       "name": "Botão Inactive",
       "type": "button",
       "criticality": "low",

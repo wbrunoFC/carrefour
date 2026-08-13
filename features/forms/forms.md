@@ -109,7 +109,7 @@ Input respeita maxLength=30.
 
 ## Cenários
 
-### FORMS-001 — Eco do input
+### FORMS-FORMS-001 — Eco do input
 
 **Dado que** o usuário está em Forms  
 **Quando** digitar um texto no input  
@@ -117,7 +117,7 @@ Input respeita maxLength=30.
 
 ---
 
-### FORMS-002 — Toggle do switch
+### FORMS-FORMS-002 — Toggle do switch
 
 **Dado que** o switch está OFF  
 **Quando** o usuário ativá-lo  
@@ -125,7 +125,7 @@ Input respeita maxLength=30.
 
 ---
 
-### FORMS-003 — Botão Active
+### FORMS-FORMS-003 — Botão Active
 
 **Dado que** o usuário está em Forms  
 **Quando** tocar em Active  
@@ -133,7 +133,7 @@ Input respeita maxLength=30.
 
 ---
 
-### FORMS-004 — Botão Inactive
+### FORMS-FORMS-004 — Botão Inactive
 
 **Dado que** o usuário está em Forms  
 **Quando** tentar acionar Inactive  

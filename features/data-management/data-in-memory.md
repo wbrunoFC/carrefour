@@ -86,7 +86,7 @@ Valor não está mais disponível ao reabrir.
 
 ## Cenários
 
-### MEM-001 — Salvar em memória
+### DATA-DATA-IN-MEMORY-001 — Salvar em memória
 
 **Dado que** o usuário está no tier In-memory  
 **Quando** informar um valor e salvar  
@@ -94,7 +94,7 @@ Valor não está mais disponível ao reabrir.
 
 ---
 
-### MEM-002 — Limpar memória
+### DATA-DATA-IN-MEMORY-002 — Limpar memória
 
 **Dado que** há valor em memória  
 **Quando** tocar em Clear  
@@ -102,7 +102,7 @@ Valor não está mais disponível ao reabrir.
 
 ---
 
-### MEM-003 — Perda após kill
+### DATA-DATA-IN-MEMORY-003 — Perda após kill
 
 **Dado que** um valor foi salvo em memória  
 **Quando** o processo do app for encerrado e o app reaberto  

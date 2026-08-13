@@ -98,7 +98,7 @@ Usuário precisa usar Ajustes; app aponta Open Settings no fluxo de revoke.
 
 ## Cenários
 
-### PERM-001 — Solicitar câmera
+### PERMISSIONS-PERMISSIONS-001 — Solicitar câmera
 
 **Dado que** câmera ainda não foi concedida  
 **Quando** ativar o switch Camera  
@@ -106,7 +106,7 @@ Usuário precisa usar Ajustes; app aponta Open Settings no fluxo de revoke.
 
 ---
 
-### PERM-002 — Conceder microfone
+### PERMISSIONS-PERMISSIONS-002 — Conceder microfone
 
 **Dado que** o prompt de microfone está visível  
 **Quando** o usuário permitir  
@@ -114,7 +114,7 @@ Usuário precisa usar Ajustes; app aponta Open Settings no fluxo de revoke.
 
 ---
 
-### PERM-003 — Revogar via Settings
+### PERMISSIONS-PERMISSIONS-003 — Revogar via Settings
 
 **Dado que** uma permissão está concedida  
 **Quando** o usuário tentar desligar o switch  

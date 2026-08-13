@@ -3,7 +3,7 @@
   "platform": "ios",
   "elements": {
     "screen": {
-      "id": "CT001",
+      "id": "EL001",
       "name": "Tela Data Management",
       "type": "screen",
       "criticality": "medium",
@@ -15,7 +15,7 @@
       }
     },
     "input": {
-      "id": "CT002",
+      "id": "EL002",
       "name": "Campo KV",
       "type": "input",
       "criticality": "medium",
@@ -27,7 +27,7 @@
       }
     },
     "readout": {
-      "id": "CT003",
+      "id": "EL003",
       "name": "Leitura KV",
       "type": "text",
       "criticality": "medium",
@@ -39,7 +39,7 @@
       }
     },
     "save": {
-      "id": "CT004",
+      "id": "EL004",
       "name": "Botão Save KV",
       "type": "button",
       "criticality": "medium",
@@ -51,7 +51,7 @@
       }
     },
     "clear": {
-      "id": "CT005",
+      "id": "EL005",
       "name": "Botão Clear KV",
       "type": "button",
       "criticality": "medium",

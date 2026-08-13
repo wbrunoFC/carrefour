@@ -1,17 +1,17 @@
-# Pages — Page Objects + Gherkin (native-demo-app)
+# Pages — Page Objects (native-demo-app)
 
 Cada pasta = uma página/feature de UI.
 
 ```
 pages/
 └── {page}/
-    ├── {page}.feature
     ├── android.json
     └── ios.json
 ```
 
-- `.feature`: cenários CT00N derivados de `features/**/*.md`
+- Cenários / jornadas: só em `features/**/*.md` (não duplicar Gherkin aqui)
 - `android.json` / `ios.json`: mapa de elementos com `accessibilityId`
+- `id` do elemento: `EL00N` (Element) — nunca `CT` (reservado historicamente a cenário; Scenario ID agora é `<DOMAIN>-<FEATURE>-<NNN>` em `features/` + `tests/`)
 - Valores de seletor vêm do código (`testProperties` / `button-{id|text}`)
 - iOS: `testID`; Android: `accessibilityLabel` — mesma string no app
 

@@ -81,7 +81,7 @@ _Nenhuma identificada no código._
 
 ## Cenários
 
-### SWIPE-001 — Navegar carrossel
+### SWIPE-SWIPE-001 — Navegar carrossel
 
 **Dado que** o usuário está em Swipe  
 **Quando** deslizar horizontalmente no carousel  
@@ -89,7 +89,7 @@ _Nenhuma identificada no código._
 
 ---
 
-### SWIPE-002 — Encontrar logo oculto
+### SWIPE-SWIPE-002 — Encontrar logo oculto
 
 **Dado que** o usuário está em Swipe  
 **Quando** rolar verticalmente até o fim  
