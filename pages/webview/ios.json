@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Aba Webview",
       "type": "tab",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Webview"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Item de menu Webview",
       "type": "link",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-webview"
@@ -24,11 +30,14 @@
       "id": "CT003",
       "name": "Componente WebView",
       "type": "webview",
+      "criticality": "medium",
+      "flaky": "high",
+      "complexity": "high",
+      "note": "WebView.tsx sem testID; seletor por classe nativa até app expor accessibility id",
       "selector": {
         "strategy": "class name",
         "value": "XCUIElementTypeWebView"
-      },
-      "note": "WebView.tsx sem testID; seletor por classe nativa até app expor accessibility id"
+      }
     }
   }
 }

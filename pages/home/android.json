@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Home",
       "type": "screen",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Home-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Aba Home",
       "type": "tab",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Home"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Botão Menu",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Menu"

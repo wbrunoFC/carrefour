@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Login",
       "type": "screen",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Login-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Categoria Sign up",
       "type": "button",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-sign-up-container"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Categoria Login",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-login-container"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Campo de e-mail",
       "type": "input",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "input-email"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Campo de senha",
       "type": "input",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "input-password"
@@ -51,6 +66,9 @@
       "id": "CT006",
       "name": "Campo confirmar senha",
       "type": "input",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "input-repeat-password"
@@ -60,6 +78,9 @@
       "id": "CT007",
       "name": "Botão SIGN UP",
       "type": "button",
+      "criticality": "high",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-SIGN UP"

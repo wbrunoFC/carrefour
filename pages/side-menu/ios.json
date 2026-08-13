@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Botão Menu",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Menu"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Modal do menu",
       "type": "modal",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "tab-side-menu-modal"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Painel do menu",
       "type": "panel",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "tab-side-menu-panel"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Item Home",
       "type": "link",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-home"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Item Webview",
       "type": "link",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-webview"
@@ -51,6 +66,9 @@
       "id": "CT006",
       "name": "Item Login",
       "type": "link",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-login"
@@ -60,6 +78,9 @@
       "id": "CT007",
       "name": "Item Forms",
       "type": "link",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-forms"
@@ -69,6 +90,9 @@
       "id": "CT008",
       "name": "Item Swipe",
       "type": "link",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-swipe"
@@ -78,6 +102,9 @@
       "id": "CT009",
       "name": "Item Drag",
       "type": "link",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-drag"
@@ -87,6 +114,9 @@
       "id": "CT010",
       "name": "Item Permissions",
       "type": "link",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-permissions"
@@ -96,6 +126,9 @@
       "id": "CT011",
       "name": "Item Data",
       "type": "link",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "side-menu-item-data-management"

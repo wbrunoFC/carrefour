@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Permissions",
       "type": "screen",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Permissions-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Switch câmera",
       "type": "switch",
+      "criticality": "high",
+      "flaky": "high",
+      "complexity": "high",
       "selector": {
         "strategy": "accessibilityId",
         "value": "permission-switch-camera"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Switch microfone",
       "type": "switch",
+      "criticality": "high",
+      "flaky": "high",
+      "complexity": "high",
       "selector": {
         "strategy": "accessibilityId",
         "value": "permission-switch-microphone"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Switch localização",
       "type": "switch",
+      "criticality": "high",
+      "flaky": "high",
+      "complexity": "high",
       "selector": {
         "strategy": "accessibilityId",
         "value": "permission-switch-location"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Switch fotos",
       "type": "switch",
+      "criticality": "high",
+      "flaky": "high",
+      "complexity": "high",
       "selector": {
         "strategy": "accessibilityId",
         "value": "permission-switch-photos"

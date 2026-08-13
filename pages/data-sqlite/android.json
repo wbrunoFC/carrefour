@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Data Management",
       "type": "screen",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "DataManagement-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Campo SQLite",
       "type": "input",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "data-sqlite-input"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Leitura SQLite",
       "type": "text",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "data-sqlite-readout"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Botão Save SQLite",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-data-sqlite-save"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Botão Clear SQLite",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-data-sqlite-clear"

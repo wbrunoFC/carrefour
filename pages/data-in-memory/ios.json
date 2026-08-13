@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Data Management",
       "type": "screen",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "DataManagement-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Campo in-memory",
       "type": "input",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "data-memory-input"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Leitura in-memory",
       "type": "text",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "data-memory-readout"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Botão Save in-memory",
       "type": "button",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-data-memory-save"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Botão Clear in-memory",
       "type": "button",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-data-memory-clear"

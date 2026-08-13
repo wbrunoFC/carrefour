@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Login",
       "type": "screen",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Login-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Categoria Login",
       "type": "button",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-login-container"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Botão biométrico",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "high",
+      "complexity": "high",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-biometric"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Campo de e-mail",
       "type": "input",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "input-email"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Campo de senha",
       "type": "input",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "input-password"

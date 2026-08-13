@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Forms",
       "type": "screen",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Forms-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Campo de texto",
       "type": "input",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "text-input"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Texto digitado",
       "type": "text",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "input-text-result"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Switch",
       "type": "switch",
+      "criticality": "medium",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "switch"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Texto do switch",
       "type": "text",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "switch-text"
@@ -51,6 +66,9 @@
       "id": "CT006",
       "name": "Dropdown",
       "type": "dropdown",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Dropdown"
@@ -60,6 +78,9 @@
       "id": "CT007",
       "name": "Picker do dropdown",
       "type": "picker",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Dropdown picker"
@@ -69,6 +90,9 @@
       "id": "CT008",
       "name": "Chevron do dropdown",
       "type": "icon",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "dropdown-chevron"
@@ -78,6 +102,9 @@
       "id": "CT009",
       "name": "Botão Active",
       "type": "button",
+      "criticality": "medium",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-Active"
@@ -87,6 +114,9 @@
       "id": "CT010",
       "name": "Botão Inactive",
       "type": "button",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-Inactive"

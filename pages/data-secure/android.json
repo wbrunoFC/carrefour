@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Data Management",
       "type": "screen",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "DataManagement-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Campo Secure",
       "type": "input",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "data-secure-input"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Leitura Secure",
       "type": "text",
+      "criticality": "high",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "data-secure-readout"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Botão Save Secure",
       "type": "button",
+      "criticality": "high",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-data-secure-save"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Botão Clear Secure",
       "type": "button",
+      "criticality": "high",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "button-data-secure-clear"

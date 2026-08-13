@@ -6,6 +6,9 @@
       "id": "CT001",
       "name": "Tela Swipe",
       "type": "screen",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Swipe-screen"
@@ -15,6 +18,9 @@
       "id": "CT002",
       "name": "Carrossel",
       "type": "carousel",
+      "criticality": "low",
+      "flaky": "medium",
+      "complexity": "high",
       "selector": {
         "strategy": "accessibilityId",
         "value": "Carousel"
@@ -24,6 +30,9 @@
       "id": "CT003",
       "name": "Card do slide",
       "type": "card",
+      "criticality": "low",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "card"
@@ -33,6 +42,9 @@
       "id": "CT004",
       "name": "Texto do slide",
       "type": "text",
+      "criticality": "low",
+      "flaky": "low",
+      "complexity": "low",
       "selector": {
         "strategy": "accessibilityId",
         "value": "slideTextContainer"
@@ -42,6 +54,9 @@
       "id": "CT005",
       "name": "Logo WebdriverIO",
       "type": "image",
+      "criticality": "low",
+      "flaky": "medium",
+      "complexity": "medium",
       "selector": {
         "strategy": "accessibilityId",
         "value": "WebdriverIO logo"
