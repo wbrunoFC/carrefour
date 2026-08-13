@@ -1,0 +1,33 @@
+{
+  "page": "home",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "CT001",
+      "name": "Tela Home",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Home-screen"
+      }
+    },
+    "tabHome": {
+      "id": "CT002",
+      "name": "Aba Home",
+      "type": "tab",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Home"
+      }
+    },
+    "menuButton": {
+      "id": "CT003",
+      "name": "Botão Menu",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Menu"
+      }
+    }
+  }
+}

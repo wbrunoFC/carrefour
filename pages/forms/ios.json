@@ -1,0 +1,96 @@
+{
+  "page": "forms",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "CT001",
+      "name": "Tela Forms",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Forms-screen"
+      }
+    },
+    "textInput": {
+      "id": "CT002",
+      "name": "Campo de texto",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "text-input"
+      }
+    },
+    "inputResult": {
+      "id": "CT003",
+      "name": "Texto digitado",
+      "type": "text",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-text-result"
+      }
+    },
+    "switch": {
+      "id": "CT004",
+      "name": "Switch",
+      "type": "switch",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "switch"
+      }
+    },
+    "switchText": {
+      "id": "CT005",
+      "name": "Texto do switch",
+      "type": "text",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "switch-text"
+      }
+    },
+    "dropdown": {
+      "id": "CT006",
+      "name": "Dropdown",
+      "type": "dropdown",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Dropdown"
+      }
+    },
+    "dropdownPicker": {
+      "id": "CT007",
+      "name": "Picker do dropdown",
+      "type": "picker",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Dropdown picker"
+      }
+    },
+    "dropdownChevron": {
+      "id": "CT008",
+      "name": "Chevron do dropdown",
+      "type": "icon",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "dropdown-chevron"
+      }
+    },
+    "activeButton": {
+      "id": "CT009",
+      "name": "Botão Active",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-Active"
+      }
+    },
+    "inactiveButton": {
+      "id": "CT010",
+      "name": "Botão Inactive",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-Inactive"
+      }
+    }
+  }
+}

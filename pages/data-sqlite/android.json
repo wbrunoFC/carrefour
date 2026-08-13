@@ -1,0 +1,51 @@
+{
+  "page": "data-sqlite",
+  "platform": "android",
+  "elements": {
+    "screen": {
+      "id": "CT001",
+      "name": "Tela Data Management",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "DataManagement-screen"
+      }
+    },
+    "input": {
+      "id": "CT002",
+      "name": "Campo SQLite",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "data-sqlite-input"
+      }
+    },
+    "readout": {
+      "id": "CT003",
+      "name": "Leitura SQLite",
+      "type": "text",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "data-sqlite-readout"
+      }
+    },
+    "save": {
+      "id": "CT004",
+      "name": "Botão Save SQLite",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-data-sqlite-save"
+      }
+    },
+    "clear": {
+      "id": "CT005",
+      "name": "Botão Clear SQLite",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-data-sqlite-clear"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "page": "signup",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "CT001",
+      "name": "Tela Login",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Login-screen"
+      }
+    },
+    "signUpTab": {
+      "id": "CT002",
+      "name": "Categoria Sign up",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-sign-up-container"
+      }
+    },
+    "loginTab": {
+      "id": "CT003",
+      "name": "Categoria Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-login-container"
+      }
+    },
+    "email": {
+      "id": "CT004",
+      "name": "Campo de e-mail",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-email"
+      }
+    },
+    "password": {
+      "id": "CT005",
+      "name": "Campo de senha",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-password"
+      }
+    },
+    "confirmPassword": {
+      "id": "CT006",
+      "name": "Campo confirmar senha",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-repeat-password"
+      }
+    },
+    "signUpButton": {
+      "id": "CT007",
+      "name": "Botão SIGN UP",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-SIGN UP"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "page": "login",
+  "platform": "android",
+  "elements": {
+    "screen": {
+      "id": "CT001",
+      "name": "Tela Login",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Login-screen"
+      }
+    },
+    "loginTab": {
+      "id": "CT002",
+      "name": "Categoria Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-login-container"
+      }
+    },
+    "signUpTab": {
+      "id": "CT003",
+      "name": "Categoria Sign up",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-sign-up-container"
+      }
+    },
+    "email": {
+      "id": "CT004",
+      "name": "Campo de e-mail",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-email"
+      }
+    },
+    "password": {
+      "id": "CT005",
+      "name": "Campo de senha",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-password"
+      }
+    },
+    "loginButton": {
+      "id": "CT006",
+      "name": "Botão LOGIN",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-LOGIN"
+      }
+    },
+    "biometricButton": {
+      "id": "CT007",
+      "name": "Botão biométrico",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-biometric"
+      }
+    }
+  }
+}

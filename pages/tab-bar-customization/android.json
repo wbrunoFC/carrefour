@@ -1,0 +1,87 @@
+{
+  "page": "tab-bar-customization",
+  "platform": "android",
+  "elements": {
+    "menuButton": {
+      "id": "CT001",
+      "name": "Botão Menu",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Menu"
+      }
+    },
+    "panel": {
+      "id": "CT002",
+      "name": "Painel do menu",
+      "type": "panel",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "tab-side-menu-panel"
+      }
+    },
+    "starWebview": {
+      "id": "CT003",
+      "name": "Estrela Webview",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-webview"
+      }
+    },
+    "starLogin": {
+      "id": "CT004",
+      "name": "Estrela Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-login"
+      }
+    },
+    "starForms": {
+      "id": "CT005",
+      "name": "Estrela Forms",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-forms"
+      }
+    },
+    "starSwipe": {
+      "id": "CT006",
+      "name": "Estrela Swipe",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-swipe"
+      }
+    },
+    "starDrag": {
+      "id": "CT007",
+      "name": "Estrela Drag",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-drag"
+      }
+    },
+    "starPermissions": {
+      "id": "CT008",
+      "name": "Estrela Permissions",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-permissions"
+      }
+    },
+    "starData": {
+      "id": "CT009",
+      "name": "Estrela Data",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-star-data-management"
+      }
+    }
+  }
+}

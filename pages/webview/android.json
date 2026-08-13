@@ -1,0 +1,34 @@
+{
+  "page": "webview",
+  "platform": "android",
+  "elements": {
+    "tabWebview": {
+      "id": "CT001",
+      "name": "Aba Webview",
+      "type": "tab",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Webview"
+      }
+    },
+    "menuItem": {
+      "id": "CT002",
+      "name": "Item de menu Webview",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-webview"
+      }
+    },
+    "webView": {
+      "id": "CT003",
+      "name": "Componente WebView",
+      "type": "webview",
+      "selector": {
+        "strategy": "class name",
+        "value": "android.webkit.WebView"
+      },
+      "note": "WebView.tsx sem testID; seletor por classe nativa até app expor accessibility id"
+    }
+  }
+}
