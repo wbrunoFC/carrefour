@@ -13,6 +13,7 @@
     "test:android:hybrid": "npm run test:android && npm run test:android:bs",
     "test:ios:hybrid": "npm run test:ios && npm run test:ios:bs",
     "test:e2e": "npm run test:android",
+    "test:api": "wdio run config/wdio.api.conf.ts",
     "report": "allure open tests/results/$(date +%Y-%m-%d)/allure-report"
   },
   "keywords": [],

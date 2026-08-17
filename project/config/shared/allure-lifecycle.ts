@@ -3,21 +3,13 @@ import path from 'node:path';
 
 import { projectRoot } from './project-paths';
 
-type TestResult = { passed: boolean };
-
 export function createAllureLifecycleHooks(
   allureResultsDir: string,
   allureReportDir: string,
 ) {
   return {
-    afterTest: async function (
-      _test: unknown,
-      _context: unknown,
-      { passed }: TestResult,
-    ) {
-      if (!passed) {
-        await browser.takeScreenshot();
-      }
+    afterTest: async function () {
+      await browser.takeScreenshot();
     },
     onComplete() {
       generateAllureReport(allureResultsDir, allureReportDir);

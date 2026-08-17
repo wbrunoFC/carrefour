@@ -52,7 +52,7 @@ Retorna hooks WDIO:
 
 | Hook | Comportamento |
 |------|---------------|
-| `afterTest` | Screenshot automático em falha |
+| `afterTest` | Screenshot automático em todo teste (passou ou falhou) |
 | `onComplete` | Gera report Allure e abre no browser (quando permitido) |
 
 **Funções internas:**

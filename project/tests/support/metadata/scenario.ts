@@ -8,5 +8,5 @@ export interface ScenarioMeta {
   complexity: Complexity;
   flakiness: Flakiness;
   tags: string[];
-  platforms: Array<'android' | 'ios'>;
+  platforms: Array<'android' | 'ios' | 'api'>;
 }
