@@ -9,4 +9,3 @@ allure-report/
 coverage/
 .wdio-scratch/
 *.apk
-!apps/**/*.apk

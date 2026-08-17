@@ -38,6 +38,12 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Fetch demo APK
+        run: |
+          mkdir -p apps/v2.2.0/android
+          curl -fsSL -o apps/v2.2.0/android/android.wdio.native.app.v2.2.0.apk \
+            https://github.com/webdriverio/native-demo-app/releases/download/v2.2.0/android.wdio.native.app.v2.2.0.apk
+
       - name: Run slice on BrowserStack Android
         run: >
           npm run test:android:bs --

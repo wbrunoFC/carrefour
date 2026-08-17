@@ -6,7 +6,7 @@ Validação desta orquestração. Código do workflow em `/speckit-implement`.
 
 - Slice verde local (11 `it()`).
 - Humano criou no GitHub: `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`.
-- APK demo em `project/apps/` (já no repo).
+- APK demo em `project/apps/` no runner (CI baixa o release oficial v2.2.0; não versionar o `.apk`).
 - **Não** editar `.env` para “fazer o CI passar”.
 
 ## O que precisa existir depois do implement
