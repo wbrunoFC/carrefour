@@ -8,6 +8,15 @@
 
 **Input**: User description: "$ARGUMENTS"
 
+## Source of Truth *(mandatory)*
+
+Behavioral scenarios MUST be selected from `project/features/` using
+existing Scenario IDs (`<DOMAIN>-<FEATURE>-<NNN>`). Each user story
+below MUST name those IDs. Speckit MUST NOT invent a parallel catalog.
+
+One Speckit feature directory per domain. Approved slice: authentication,
+navigation, forms. See `.specify/memory/constitution.md`.
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

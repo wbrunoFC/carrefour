@@ -1,0 +1,87 @@
+{
+  "page": "login",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Login",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Login-screen"
+      }
+    },
+    "loginTab": {
+      "id": "EL002",
+      "name": "Categoria Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-login-container"
+      }
+    },
+    "signUpTab": {
+      "id": "EL003",
+      "name": "Categoria Sign up",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-sign-up-container"
+      }
+    },
+    "email": {
+      "id": "EL004",
+      "name": "Campo de e-mail",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-email"
+      }
+    },
+    "password": {
+      "id": "EL005",
+      "name": "Campo de senha",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-password"
+      }
+    },
+    "loginButton": {
+      "id": "EL006",
+      "name": "Botão LOGIN",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-LOGIN"
+      }
+    },
+    "biometricButton": {
+      "id": "EL007",
+      "name": "Botão biométrico",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-biometric"
+      }
+    },
+    "successAlert": {
+      "id": "EL008",
+      "name": "Alerta Success",
+      "type": "alert",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label CONTAINS 'You are logged in!' OR name CONTAINS 'You are logged in!' OR value CONTAINS 'You are logged in!'"
+      }
+    },
+    "successAlertOk": {
+      "id": "EL009",
+      "name": "Botão OK do alerta",
+      "type": "button",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label == 'OK' AND type == 'XCUIElementTypeButton'"
+      }
+    }
+  }
+}

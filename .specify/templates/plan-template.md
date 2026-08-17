@@ -39,8 +39,20 @@
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+*Source: `.specify/memory/constitution.md` v1.0.0*
 
-[Gates determined based on constitution file]
+- [ ] Features-First: spec consumes Scenario IDs from `project/features/`; no parallel catalog
+- [ ] One Speckit feature per domain (`authentication` | `navigation` | `forms` in this slice)
+- [ ] Layer map intact: code only under `project/{features,pages,data,tests,config,apps}`
+- [ ] Speckit artifacts only at repo root (`.specify/`, `specs/`)
+- [ ] Scenario ID format `<DOMAIN>-<FEATURE>-<NNN>` in feature md, test title, and Allure
+- [ ] No Android/iOS test duplication unless folder-tests.md §A.6.3 behavioral split
+- [ ] Selectors only via `project/pages/{feature}/{platform}.json` (`EL00N`)
+- [ ] Data-driven inputs in `project/data/`, not hardcoded mass in `it()`
+- [ ] No fixed `sleep`; wait on a condition
+- [ ] Allure reused (already in `project/config/`); not replaced
+- [ ] CI in this slice (if in plan): `pull_request` + merge to `main`, BrowserStack Android only
+- [ ] No empty feature folders; no new npm dependency if current stack covers the need
 
 ## Project Structure
 
@@ -57,51 +69,26 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
+
+This repository is a mobile E2E automation project. Do not use `src/`,
+web app, or mobile+API option trees. Delivered `plan.md` MUST use this layout:
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+carrefour-qa/
+├── specs/[###-feature]/     # this Speckit feature (one domain)
+├── .specify/                # constitution + templates
+└── project/                 # npm root
+    ├── features/{domain}/   # source of truth (already exists)
+    ├── pages/{feature}/     # page objects (reuse)
+    ├── data/                # data-driven JSON
+    ├── tests/e2e/{domain}/{feature}/{feature}.test.ts
+    ├── tests/support/
+    ├── config/              # WDIO + Allure + BrowserStack
+    └── apps/                # apk / app under test
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: [Confirm this layout; list the exact files this
+feature will add or change. Do not invent parallel trees.]
 
 ## Complexity Tracking
 

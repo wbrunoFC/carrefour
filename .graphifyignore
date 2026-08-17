@@ -1,0 +1,12 @@
+# Binaries and test artifacts — AST on these is noise
+project/apps/
+project/node_modules/
+project/tests/results/
+project/allure-results/
+project/allure-report/
+*.apk
+*.zip
+*.log
+
+# Graphify local cost file (also in .gitignore)
+graphify-out/cost.json

@@ -1,0 +1,51 @@
+{
+  "page": "permissions",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Permissions",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Permissions-screen"
+      }
+    },
+    "camera": {
+      "id": "EL002",
+      "name": "Switch câmera",
+      "type": "switch",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "permission-switch-camera"
+      }
+    },
+    "microphone": {
+      "id": "EL003",
+      "name": "Switch microfone",
+      "type": "switch",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "permission-switch-microphone"
+      }
+    },
+    "location": {
+      "id": "EL004",
+      "name": "Switch localização",
+      "type": "switch",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "permission-switch-location"
+      }
+    },
+    "photos": {
+      "id": "EL005",
+      "name": "Switch fotos",
+      "type": "switch",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "permission-switch-photos"
+      }
+    }
+  }
+}

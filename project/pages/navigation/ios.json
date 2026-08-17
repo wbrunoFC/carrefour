@@ -1,0 +1,69 @@
+{
+  "page": "navigation",
+  "platform": "ios",
+  "elements": {
+    "homeTab": {
+      "id": "EL014",
+      "name": "Aba Home",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Home"
+      }
+    },
+    "formsTab": {
+      "id": "EL015",
+      "name": "Aba Forms",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Forms"
+      }
+    },
+    "settingsTab": {
+      "id": "EL016",
+      "name": "Aba Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Login"
+      }
+    },
+    "menuIcon": {
+      "id": "EL010",
+      "name": "Menu",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Menu"
+      }
+    },
+    "homeMenuItem": {
+      "id": "EL011",
+      "name": "Item Home",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-home"
+      }
+    },
+    "settingsMenuItem": {
+      "id": "EL012",
+      "name": "Item Webview",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-webview"
+      }
+    },
+    "logoutMenuItem": {
+      "id": "EL013",
+      "name": "Item Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-login"
+      }
+    }
+  }
+}

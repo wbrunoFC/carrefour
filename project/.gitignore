@@ -1,0 +1,12 @@
+node_modules/
+results/
+tests/results/
+allure-results/
+allure-report/
+*.log
+.env
+.DS_Store
+coverage/
+.wdio-scratch/
+*.apk
+!apps/**/*.apk

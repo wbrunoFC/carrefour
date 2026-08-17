@@ -1,0 +1,47 @@
+{
+  "domain": "AUTH",
+  "cases": [
+    {
+      "scenarioId": "AUTH-LOGIN-001",
+      "input": {
+        "email": "test@example.com",
+        "password": "password123"
+      },
+      "expected": "You are logged in!"
+    },
+    {
+      "scenarioId": "AUTH-LOGIN-002",
+      "input": {
+        "email": "invalido@",
+        "password": "password123"
+      },
+      "expected": "Please enter a valid email address"
+    },
+    {
+      "scenarioId": "AUTH-LOGIN-003",
+      "input": {
+        "email": "test@example.com",
+        "password": "pass"
+      },
+      "expected": "Please enter at least 8 characters"
+    },
+    {
+      "scenarioId": "AUTH-SIGNUP-001",
+      "input": {
+        "email": "test@example.com",
+        "password": "password123",
+        "confirmPassword": "password123"
+      },
+      "expected": "You successfully signed up!"
+    },
+    {
+      "scenarioId": "AUTH-SIGNUP-002",
+      "input": {
+        "email": "test@example.com",
+        "password": "password123",
+        "confirmPassword": "password456"
+      },
+      "expected": "Please enter the same password"
+    }
+  ]
+}

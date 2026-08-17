@@ -30,39 +30,62 @@ Qualquer QA ou agente deve conseguir:
 
 ## A.2 Mapa de camadas (obrigatório)
 
+Raiz npm = `project/` (package.json, tsconfig, config, tests). Kit QA / regras ficam fora (`.claude/`, `.cursor/`).
+
+```text
+carrefour-qa/
+├── project/                 ← raiz npm + produto sob teste + automação
+│   ├── apps/                ← binários versionados (apk / app)
+│   ├── features/            ← especificação + cenários
+│   ├── pages/               ← page objects (JSON + page/actions/assertions)
+│   ├── data/                ← dados data-driven (JSON)
+│   ├── tests/               ← automação executável (+ results/ gerado, gitignored)
+│   ├── config/              ← infra WDIO / capabilities
+│   ├── package.json
+│   └── tsconfig.json
+├── specs/                   ← Speckit: um diretório por domínio
+├── .specify/                ← Speckit constitution + templates
+├── .claude/                 ← skills
+└── .cursor/                 ← regras / knowledge do agente
+```
+
 | Camada | Papel | Conteúdo | Exemplo |
 |--------|--------|----------|---------|
-| `features/` | Conhecimento / especificação + cenários | Markdown de jornada | `features/authentication/login.md` |
-| `pages/` | Page Object (elementos) | `android.json`, `ios.json` | `pages/login/android.json` |
-| `tests/` | Automação executável | `*.test.ts` + `support/` | `tests/e2e/authentication/login/` |
-| `config/` | Infra de execução | capabilities, devices, envs | `config/capabilities/android.ts` |
+| `project/features/` | Conhecimento / especificação + cenários | Markdown de jornada | `project/features/authentication/login.md` |
+| `project/pages/` | Page Object | `android.json`, `ios.json`, `{page}.page.ts`, `{page}.actions.ts`, `{page}.assertions.ts` | `project/pages/login/` |
+| `project/apps/` | App instalável sob teste | apk / zip versionados | `project/apps/v2.2.0/android/…` |
+| `project/tests/` | Automação executável | `*.test.ts` + `support/` | `project/tests/e2e/authentication/login/` |
+| `project/tests/results/` | Report Allure (gerado) | `{YYYY-MM-DD}/allure-results` + `allure-report` | `project/tests/results/2026-08-13/allure-report/index.html` |
+| `project/config/` | Infra de execução | capabilities, devices, envs | `project/config/wdio.android.conf.ts` |
 
 Fluxo de rastreabilidade:
 
 ```text
-features/{domain}/{feature}.md          ← cenários + Scenario ID
+project/features/{domain}/{feature}.md          ← cenários + Scenario ID
         ↓
-pages/{feature}/android.json|ios.json   ← Element ID (EL00N) + selectors
+project/pages/{feature}/android.json|ios.json   ← Element ID (EL00N) + selectors
         ↓
-tests/{type}/{domain}/{feature}/{feature}.test.ts
+project/tests/{type}/{domain}/{feature}/{feature}.test.ts
         ↓
-execução (config/) → report / evidência / defect
+execução (project/config/ + project/apps/) → report / evidência / defect
 ```
 
 Regras de elo:
 
-1. O **mesmo Scenario ID** aparece em `features/**/*.md`, no `it()` do teste e no report.
-2. Selectors vêm de `pages/{feature}/{platform}.json` — não hardcoded no teste.
-3. Em `pages/*.json`, `id` do elemento usa prefixo **`EL`** (`EL001`, …). Nunca `CT`.
-4. **Proibido** `pages/**/*.feature` — Gherkin/cenários não vivem em `pages/` (fonte única: `features/`).
-5. `config/` **nunca** fica dentro de `tests/`.
+1. O **mesmo Scenario ID** aparece em `project/features/**/*.md`, no `it()` do teste e no report.
+2. Selectors vêm de `project/pages/{feature}/{platform}.json` — não hardcoded no teste.
+3. Em `project/pages/*.json`, `id` do elemento usa prefixo **`EL`** (`EL001`, …). Nunca `CT`.
+4. **Proibido** `project/pages/**/*.feature` — Gherkin/cenários não vivem em `project/pages/` (fonte única: `project/features/`).
+5. `project/config/` **nunca** fica dentro de `project/tests/`.
+6. Binários do app sob teste vivem em `project/apps/`, não em `project/tests/`.
+7. Comandos npm rodam com cwd = `project/`.
 
 ---
 
 ## A.3 Estrutura oficial
 
 ```text
-tests/
+project/tests/
 ├── e2e/
 │   └── <domain>/
 │       └── <feature>/
@@ -131,9 +154,9 @@ Formato obrigatório:
 - `FEATURE`: nome do diretório/arquivo da feature em `UPPER-KEBAB` (ex.: `biometrics-login` → `BIOMETRICS-LOGIN`).
 - `NNN`: inteiro com 3+ dígitos, sequencial **por feature**, único quando concatenado ao prefixo.
 - Unicidade: **global no repositório** (o ID completo não se repete).
-- `DOMAIN`: token congelado do diretório em `features/` (não inventar abreviação):
+- `DOMAIN`: token congelado do diretório em `project/features/` (não inventar abreviação):
 
-| Pasta `features/` | `DOMAIN` |
+| Pasta `project/features/` | `DOMAIN` |
 |-------------------|----------|
 | `authentication/` | `AUTH` |
 | `data-management/` | `DATA` |
@@ -170,7 +193,7 @@ login-1               # minúsculo / curto
 AUTH_LOGIN_001        # underscore
 ```
 
-Em `features/{domain}/{feature}.md`:
+Em `project/features/{domain}/{feature}.md`:
 
 ```markdown
 ### AUTH-LOGIN-001 — Login com dados válidos de formato
@@ -190,7 +213,7 @@ Element ID (page object), separado do Scenario ID:
 
 **Não alterar** o Scenario ID após criação (exceto correção de colisão documentada).
 
-Legado: `CT00x` em elemento → migrar para `EL00x`. `CT00x` / IDs curtos em cenário → migrar para `<DOMAIN>-<FEATURE>-<NNN>` em `features/` + teste.
+Legado: `CT00x` em elemento → migrar para `EL00x`. `CT00x` / IDs curtos em cenário → migrar para `<DOMAIN>-<FEATURE>-<NNN>` em `project/features/` + teste.
 
 ---
 
@@ -231,13 +254,13 @@ Integração real com:
 - diálogos/permission prompts com semântica diferente por OS;
 - API nativa exclusiva de uma plataforma.
 
-**Não vai aqui se:** só muda `accessibilityId` / classe nativa do elemento — isso é `pages/*/android.json` vs `ios.json`, e o teste fica em `e2e/` ou `integration/`.
+**Não vai aqui se:** só muda `accessibilityId` / classe nativa do elemento — isso é `project/pages/*/android.json` vs `ios.json`, e o teste fica em `e2e/` ou `integration/`.
 
 Formato **congelado** (nunca flat):
 
 ```text
-tests/platform/android/<domain>/<feature>/
-tests/platform/ios/<domain>/<feature>/
+project/tests/platform/android/<domain>/<feature>/
+project/tests/platform/ios/<domain>/<feature>/
 ```
 
 ### A.6.4 `accessibility/` — vai aqui se
@@ -320,10 +343,10 @@ Duplicar sob `platform/` **somente** com diferença comportamental real (A.6.3).
 
 ## A.10 Relação teste ↔ page object ↔ features
 
-1. Domínio/feature do teste = domínio em `features/` e pasta em `pages/` (nome da feature).
-2. Cenários em `features/**/*.md` definem o contrato comportamental do Scenario ID.
+1. Domínio/feature do teste = domínio em `project/features/` e pasta em `project/pages/` (nome da feature).
+2. Cenários em `project/features/**/*.md` definem o contrato comportamental do Scenario ID.
 3. O `*.test.ts` implementa esse contrato; não redefine outro comportamento sob o mesmo ID.
-4. Elementos: ler de `pages/{feature}/android.json` ou `ios.json` conforme a sessão (`id` = `EL00N`).
+4. Elementos: ler de `project/pages/{feature}/android.json` ou `ios.json` conforme a sessão (`id` = `EL00N`).
 
 ---
 
@@ -343,8 +366,8 @@ Duplicar sob `platform/` **somente** com diferença comportamental real (A.6.3).
 [ ] Domínio e feature corretos
 [ ] Tipo decidido via A.6
 [ ] Comportamento Android/iOS é o mesmo? (se sim, não usar platform/)
-[ ] features/*.md existe / cenários alinhados ao Scenario ID
-[ ] Page objects em pages/ reutilizáveis (`EL00N`, sem `.feature`)
+[ ] project/features/*.md existe / cenários alinhados ao Scenario ID
+[ ] Page objects em project/pages/ reutilizáveis (`EL00N`, sem `.feature`)
 [ ] criticality + complexity definidos pelas decision rules
 [ ] flakiness inicial UNKNOWN ou LOW
 [ ] tags definidas
@@ -358,7 +381,7 @@ Duplicar sob `platform/` **somente** com diferença comportamental real (A.6.3).
 2. Não duplicar cenário.
 3. Não mover pasta sem mudança real de domínio/tipo.
 4. Atualizar metadata com justificativa.
-5. Reutilizar pages/support existentes.
+5. Reutilizar project/pages e tests/support existentes.
 6. Manter determinismo; sem dependência entre cenários.
 7. Não meter lógica de plataforma em teste multiplataforma.
 
@@ -369,7 +392,7 @@ Duplicar sob `platform/` **somente** com diferença comportamental real (A.6.3).
 3. Verificar duplicata por ID / domínio / feature.
 4. Não criar `platform/` sem diferença comportamental comprovada no código.
 5. Não criar pastas de suíte nem arquivos genéricos.
-6. Selectors só via `pages/`.
+6. Selectors só via `project/pages/`.
 7. Não alterar esta arquitetura sem pedido explícito do humano.
 
 ---
@@ -390,12 +413,13 @@ Como classificar / selecionar?     → metadata + tags
 Não contém cenários funcionais.
 
 ```text
-tests/support/
-├── fixtures/     # estados reutilizáveis (ex.: authenticated-user.ts)
-├── builders/     # objetos/estados complexos com muitas combinações
-├── factories/    # criação rápida de dados (UserFactory.create())
-├── hooks/        # app-launch, cleanup, screenshots, …
-└── metadata/     # tipos + validação do schema do cenário
+project/tests/
+├── support/
+│   ├── fixtures/     # estados reutilizáveis + page loader + data JSON
+│   ├── builders/     # objetos/estados complexos com muitas combinações
+│   ├── factories/    # criação rápida de dados (UserFactory.create())
+│   ├── hooks/        # app-launch, cleanup, screenshots, …
+│   └── metadata/     # tipos + validação do schema do cenário
 ```
 
 ### Quando usar o quê
@@ -431,7 +455,7 @@ const checkout = new CheckoutBuilder()
 ### C.1 Catálogo local (canônico neste repo)
 
 ```text
-tests/e2e/
+project/tests/e2e/
 ├── authentication/
 │   ├── login/
 │   ├── signup/
@@ -451,13 +475,13 @@ tests/e2e/
     ├── data-sqlite/
     └── data-secure/
 
-tests/integration/
+project/tests/integration/
 ├── authentication/biometrics-login/
 ├── webview/webview/
 ├── permissions/permissions/
 └── data-management/...
 
-tests/platform/
+project/tests/platform/
 ├── android/
 │   ├── authentication/biometrics-login/
 │   └── permissions/permissions/
@@ -465,7 +489,7 @@ tests/platform/
     ├── authentication/biometrics-login/
     └── permissions/permissions/
 
-tests/accessibility/
+project/tests/accessibility/
 └── (mesmo domínio/feature quando o objetivo for a11y)
 ```
 
@@ -490,10 +514,13 @@ Não copiar esses domínios para o sandbox local sem o produto correspondente.
 Estrutura:
 
 ```text
-tests/e2e/authentication/login/login.test.ts
-pages/login/android.json
-pages/login/ios.json
-features/authentication/login.md
+project/tests/e2e/authentication/login/login.test.ts
+project/pages/login/android.json
+project/pages/login/ios.json
+project/pages/login/login.page.ts
+project/pages/login/login.actions.ts
+project/pages/login/login.assertions.ts
+project/features/authentication/login.md
 ```
 
 Teste (esqueleto):
@@ -501,8 +528,8 @@ Teste (esqueleto):
 ```ts
 describe('FEATURE: login', () => {
   it('@AUTH-LOGIN-001', async () => {
-    // selectors: pages/login/{platform}.json (Element ID EL00N)
-    // cenário: features/authentication/login.md
+    // selectors: project/pages/login/{platform}.json (Element ID EL00N)
+    // cenário: project/features/authentication/login.md
     // dados: support/factories ou builders
   });
 });
@@ -546,7 +573,7 @@ tests/auth/
 Correto:
 
 ```text
-tests/e2e/authentication/login/
+project/tests/e2e/authentication/login/
 ```
 
 ---
@@ -578,10 +605,10 @@ Scenario ID | Tags | Criticality | Complexity | Flakiness | Platform | Environme
 | Dados | factories / builders / fixtures |
 | Arquivos genéricos | Proibidos |
 | Pastas vazias preventivas | Proibidas (nascem com o 1º teste) |
-| Camadas | features → pages → tests → config |
-| Scenario ID | em `features/` + `tests/` (`<DOMAIN>-<FEATURE>-<NNN>`) |
-| Element ID | em `pages/*.json` (`EL00N`) |
-| `pages/**/*.feature` | Proibido |
+| Camadas | project/features → project/pages → project/tests → project/config |
+| Scenario ID | em `project/features/` + `tests/` (`<DOMAIN>-<FEATURE>-<NNN>`) |
+| Element ID | em `project/pages/*.json` (`EL00N`) |
+| `project/pages/**/*.feature` | Proibido |
 | Tecnologia | Não define pasta funcional |
 
 ---

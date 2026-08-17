@@ -1,0 +1,56 @@
+name: e2e-android
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: project
+
+jobs:
+  e2e-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+      BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+      BROWSERSTACK_LOCAL: 'false'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: project/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Run slice on BrowserStack Android
+        run: >
+          npm run test:android:bs --
+          --spec tests/e2e/authentication/login/login.test.ts
+          --spec tests/e2e/authentication/signup/signup.test.ts
+          --spec tests/e2e/home/home/home.test.ts
+          --spec tests/e2e/navigation/side-menu/side-menu.test.ts
+          --spec tests/e2e/forms/forms/forms.test.ts
+
+      - name: Upload Allure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-e2e-android
+          path: project/tests/results/
+          if-no-files-found: warn

@@ -1,0 +1,186 @@
+{
+  "page": "drag",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Drag",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Drag-drop-screen"
+      }
+    },
+    "renew": {
+      "id": "EL002",
+      "name": "Botão Retry/Renew",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "renew"
+      }
+    },
+    "dragl1": {
+      "id": "EL003",
+      "name": "Peça l1",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-l1"
+      }
+    },
+    "dragl2": {
+      "id": "EL004",
+      "name": "Peça l2",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-l2"
+      }
+    },
+    "dragl3": {
+      "id": "EL005",
+      "name": "Peça l3",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-l3"
+      }
+    },
+    "dragc1": {
+      "id": "EL006",
+      "name": "Peça c1",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-c1"
+      }
+    },
+    "dragc2": {
+      "id": "EL007",
+      "name": "Peça c2",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-c2"
+      }
+    },
+    "dragc3": {
+      "id": "EL008",
+      "name": "Peça c3",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-c3"
+      }
+    },
+    "dragr1": {
+      "id": "EL009",
+      "name": "Peça r1",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-r1"
+      }
+    },
+    "dragr2": {
+      "id": "EL010",
+      "name": "Peça r2",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-r2"
+      }
+    },
+    "dragr3": {
+      "id": "EL011",
+      "name": "Peça r3",
+      "type": "draggable",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drag-r3"
+      }
+    },
+    "dropl1": {
+      "id": "EL012",
+      "name": "Zona l1",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-l1"
+      }
+    },
+    "dropl2": {
+      "id": "EL013",
+      "name": "Zona l2",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-l2"
+      }
+    },
+    "dropl3": {
+      "id": "EL014",
+      "name": "Zona l3",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-l3"
+      }
+    },
+    "dropc1": {
+      "id": "EL015",
+      "name": "Zona c1",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-c1"
+      }
+    },
+    "dropc2": {
+      "id": "EL016",
+      "name": "Zona c2",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-c2"
+      }
+    },
+    "dropc3": {
+      "id": "EL017",
+      "name": "Zona c3",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-c3"
+      }
+    },
+    "dropr1": {
+      "id": "EL018",
+      "name": "Zona r1",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-r1"
+      }
+    },
+    "dropr2": {
+      "id": "EL019",
+      "name": "Zona r2",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-r2"
+      }
+    },
+    "dropr3": {
+      "id": "EL020",
+      "name": "Zona r3",
+      "type": "dropzone",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "drop-r3"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://webdriver.io/docs/mcp/configuration",
+  "description": "Defaults alinhados a project/config/capabilities/* — use caminhos absolutos em start_app_session.",
+  "appium": {
+    "host": "127.0.0.1",
+    "port": 4723,
+    "path": "/"
+  },
+  "android": {
+    "platform": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Android Emulator",
+    "appPath": "project/apps/v2.2.0/android/android.wdio.native.app.v2.2.0.apk",
+    "appPackage": "com.wdiodemoapp",
+    "autoGrantPermissions": true,
+    "fullReset": true,
+    "noReset": false,
+    "newCommandTimeout": 240
+  },
+  "ios": {
+    "platform": "iOS",
+    "automationName": "XCUITest",
+    "deviceName": "iPhone 15",
+    "platformVersion": "17.0",
+    "appPath": "project/apps/v2.2.0/ios/ios.simulator.wdio.native.app.v2.2.0.zip",
+    "bundleId": "org.wdiodemoapp",
+    "fullReset": true,
+    "noReset": false,
+    "newCommandTimeout": 240
+  },
+  "envOverrides": {
+    "ANDROID_DEVICE_NAME": "ANDROID_DEVICE_NAME",
+    "ANDROID_APP_PATH": "ANDROID_APP_PATH",
+    "IOS_DEVICE_NAME": "IOS_DEVICE_NAME",
+    "IOS_PLATFORM_VERSION": "IOS_PLATFORM_VERSION",
+    "IOS_APP_PATH": "IOS_APP_PATH"
+  }
+}

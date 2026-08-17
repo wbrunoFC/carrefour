@@ -1,0 +1,51 @@
+{
+  "page": "error-validation",
+  "platform": "ios",
+  "elements": {
+    "emailErrorMessage": {
+      "id": "EL022",
+      "name": "Erro email inválido",
+      "type": "text",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label CONTAINS 'Please enter a valid email address' OR name CONTAINS 'Please enter a valid email address' OR value CONTAINS 'Please enter a valid email address'"
+      }
+    },
+    "passwordErrorMessage": {
+      "id": "EL023",
+      "name": "Erro senha curta",
+      "type": "text",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label CONTAINS 'Please enter at least 8 characters' OR name CONTAINS 'Please enter at least 8 characters' OR value CONTAINS 'Please enter at least 8 characters'"
+      }
+    },
+    "requiredFieldsErrorMessage": {
+      "id": "EL024",
+      "name": "Erro campos obrigatórios",
+      "type": "text",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label CONTAINS 'Please enter' OR name CONTAINS 'Please enter' OR value CONTAINS 'Please enter'"
+      }
+    },
+    "errorAlert": {
+      "id": "EL025",
+      "name": "Alerta erro genérico",
+      "type": "alert",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label CONTAINS 'Please enter' OR name CONTAINS 'Please enter'"
+      }
+    },
+    "confirmPasswordErrorMessage": {
+      "id": "EL026",
+      "name": "Erro confirmação divergente",
+      "type": "text",
+      "selector": {
+        "strategy": "iosPredicate",
+        "value": "label CONTAINS 'Please enter the same password' OR name CONTAINS 'Please enter the same password' OR value CONTAINS 'Please enter the same password'"
+      }
+    }
+  }
+}

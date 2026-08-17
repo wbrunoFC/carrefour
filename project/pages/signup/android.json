@@ -1,0 +1,87 @@
+{
+  "page": "signup",
+  "platform": "android",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Login",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Login-screen"
+      }
+    },
+    "signUpTab": {
+      "id": "EL002",
+      "name": "Categoria Sign up",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-sign-up-container"
+      }
+    },
+    "loginTab": {
+      "id": "EL003",
+      "name": "Categoria Login",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-login-container"
+      }
+    },
+    "email": {
+      "id": "EL004",
+      "name": "Campo de e-mail",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-email"
+      }
+    },
+    "password": {
+      "id": "EL005",
+      "name": "Campo de senha",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-password"
+      }
+    },
+    "confirmPassword": {
+      "id": "EL006",
+      "name": "Campo confirmar senha",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "input-repeat-password"
+      }
+    },
+    "signUpButton": {
+      "id": "EL007",
+      "name": "Botão SIGN UP",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-SIGN UP"
+      }
+    },
+    "signedUpAlert": {
+      "id": "EL008",
+      "name": "Alerta Signed Up",
+      "type": "alert",
+      "selector": {
+        "strategy": "androidUiAutomator",
+        "value": "new UiSelector().textContains(\"You successfully signed up!\")"
+      }
+    },
+    "signedUpAlertOk": {
+      "id": "EL009",
+      "name": "Botão OK do alerta",
+      "type": "button",
+      "selector": {
+        "strategy": "androidUiAutomator",
+        "value": "new UiSelector().text(\"OK\").className(\"android.widget.Button\")"
+      }
+    }
+  }
+}

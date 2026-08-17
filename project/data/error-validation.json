@@ -1,0 +1,21 @@
+{
+  "domain": "ERROR",
+  "cases": [
+    {
+      "scenarioId": "ERROR-PASSWORD-SHORT-001",
+      "input": {
+        "email": "test@example.com",
+        "password": "pass"
+      },
+      "expected": "Please enter at least 8 characters"
+    },
+    {
+      "scenarioId": "ERROR-EMPTY-FIELDS-001",
+      "input": {
+        "email": "",
+        "password": ""
+      },
+      "expected": "Please enter"
+    }
+  ]
+}

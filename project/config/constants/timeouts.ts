@@ -1,0 +1,9 @@
+export const APPIUM_PORT = 4723;
+
+export const DEFAULT_WAIT_FOR_TIMEOUT_MS = 15_000;
+export const CONNECTION_RETRY_TIMEOUT_MS = 120_000;
+export const CONNECTION_RETRY_COUNT = 2;
+
+export const E2E_MOCHA_TIMEOUT_MS = 120_000;
+
+export const E2E_COMMAND_TIMEOUT_SEC = 240;

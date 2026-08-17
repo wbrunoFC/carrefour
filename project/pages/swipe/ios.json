@@ -1,0 +1,51 @@
+{
+  "page": "swipe",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Swipe",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Swipe-screen"
+      }
+    },
+    "carousel": {
+      "id": "EL002",
+      "name": "Carrossel",
+      "type": "carousel",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Carousel"
+      }
+    },
+    "card": {
+      "id": "EL003",
+      "name": "Card do slide",
+      "type": "card",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "card"
+      }
+    },
+    "slideText": {
+      "id": "EL004",
+      "name": "Texto do slide",
+      "type": "text",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "slideTextContainer"
+      }
+    },
+    "logo": {
+      "id": "EL005",
+      "name": "Logo WebdriverIO",
+      "type": "image",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "WebdriverIO logo"
+      }
+    }
+  }
+}

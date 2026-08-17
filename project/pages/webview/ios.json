@@ -1,0 +1,34 @@
+{
+  "page": "webview",
+  "platform": "ios",
+  "elements": {
+    "tabWebview": {
+      "id": "EL001",
+      "name": "Aba Webview",
+      "type": "tab",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Webview"
+      }
+    },
+    "menuItem": {
+      "id": "EL002",
+      "name": "Item de menu Webview",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-webview"
+      }
+    },
+    "webView": {
+      "id": "EL003",
+      "name": "Componente WebView",
+      "type": "webview",
+      "note": "WebView.tsx sem testID; seletor por classe nativa até app expor accessibility id",
+      "selector": {
+        "strategy": "class name",
+        "value": "XCUIElementTypeWebView"
+      }
+    }
+  }
+}

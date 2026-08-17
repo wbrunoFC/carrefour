@@ -9,7 +9,10 @@ description: "Task list template for feature implementation"
 
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Tests**: In this repository the deliverable IS the automated test.
+Each user story MUST produce or reuse a `*.test.ts` bound to a Scenario ID
+from `project/features/`. Reuse existing page objects. Do not add unit/contract
+tests for a product API that does not exist.
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
@@ -21,10 +24,16 @@ description: "Task list template for feature implementation"
 
 ## Path Conventions
 
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
+npm root is `project/` (cwd for npm scripts). Speckit artifacts stay at repo root.
+
+- Features: `project/features/{domain}/{feature}.md`
+- Page objects: `project/pages/{feature}/`
+- Data: `project/data/{domain-or-feature}.json`
+- Tests: `project/tests/e2e/{domain}/{feature}/{feature}.test.ts`
+- Support: `project/tests/support/`
+- Config / Allure / BrowserStack: `project/config/`
+- Speckit: `specs/{NNN-short-name}/`
+- CI (when tasked): `.github/workflows/` at repo root
 
 <!--
   ============================================================================
@@ -151,12 +160,11 @@ Examples of foundational tasks (adjust based on your project):
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
-- [ ] TXXX Performance optimization across all stories
-- [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
-- [ ] TXXX Security hardening
-- [ ] TXXX Run quickstart.md validation
+- [ ] TXXX [P] Documentation updates in README.md / project/features/README.md
+- [ ] TXXX Code cleanup; remove dead files created by this feature
+- [ ] TXXX Confirm Allure output: summary, failure screenshots, logs, environment
+- [ ] TXXX CI (only if this feature's plan includes it): `pull_request` + merge to `main`, BrowserStack Android, Allure artifact
+- [ ] TXXX Run quickstart.md validation from `project/`
 
 ---
 

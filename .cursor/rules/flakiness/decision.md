@@ -118,7 +118,7 @@ Mais difícil diagnosticar → maior risco de flaky.
 5. Aplicar overrides (§8)
 6. Se ainda incerto → pontuação (§7)
 7. Determinar HIGH | MEDIUM | LOW
-8. Registrar em `features/**/*.md` (cenário) e/ou metadata do teste; se MEDIUM/HIGH, registrar motivo
+8. Registrar em `project/features/**/*.md` (cenário) e/ou metadata do teste; se MEDIUM/HIGH, registrar motivo
 ```
 
 Em dúvida entre dois níveis (e sem override): preferir o **mais alto** e documentar.
@@ -206,10 +206,10 @@ Registrar separadamente. Matriz de risco:
 | LOW | MEDIUM | Avaliar |
 | LOW | HIGH | Corrigir quando possível |
 
-## 12. Registro no cenário (`features/**/*.md`)
+## 12. Registro no cenário (`project/features/**/*.md`)
 
 Armazenar só o resultado da classificação (e motivo se instável).  
-**Não** usar `pages/**/*.feature` (proibido). Page objects usam Element ID `EL00N`.
+**Não** usar `project/pages/**/*.feature` (proibido). Page objects usam Element ID `EL00N`.
 
 ```markdown
 ### AUTH-LOGIN-001 — Login com credenciais válidas

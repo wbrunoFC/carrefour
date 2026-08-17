@@ -1,0 +1,105 @@
+{
+  "page": "side-menu",
+  "platform": "android",
+  "elements": {
+    "menuButton": {
+      "id": "EL001",
+      "name": "Botão Menu",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "Menu"
+      }
+    },
+    "modal": {
+      "id": "EL002",
+      "name": "Modal do menu",
+      "type": "modal",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "tab-side-menu-modal"
+      }
+    },
+    "panel": {
+      "id": "EL003",
+      "name": "Painel do menu",
+      "type": "panel",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "tab-side-menu-panel"
+      }
+    },
+    "itemHome": {
+      "id": "EL004",
+      "name": "Item Home",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-home"
+      }
+    },
+    "itemWebview": {
+      "id": "EL005",
+      "name": "Item Webview",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-webview"
+      }
+    },
+    "itemLogin": {
+      "id": "EL006",
+      "name": "Item Login",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-login"
+      }
+    },
+    "itemForms": {
+      "id": "EL007",
+      "name": "Item Forms",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-forms"
+      }
+    },
+    "itemSwipe": {
+      "id": "EL008",
+      "name": "Item Swipe",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-swipe"
+      }
+    },
+    "itemDrag": {
+      "id": "EL009",
+      "name": "Item Drag",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-drag"
+      }
+    },
+    "itemPermissions": {
+      "id": "EL010",
+      "name": "Item Permissions",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-permissions"
+      }
+    },
+    "itemData": {
+      "id": "EL011",
+      "name": "Item Data",
+      "type": "link",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "side-menu-item-data-management"
+      }
+    }
+  }
+}

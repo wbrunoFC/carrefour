@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "wdio-mcp": {
+      "command": "bash",
+      "args": ["project/scripts/wdio-mcp.sh"],
+      "env": {
+        "APPIUM_URL": "127.0.0.1",
+        "APPIUM_URL_PORT": "4723",
+        "APPIUM_PATH": "/"
+      }
+    }
+  }
+}

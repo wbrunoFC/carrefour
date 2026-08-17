@@ -1,0 +1,51 @@
+{
+  "page": "data-secure",
+  "platform": "android",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Data Management",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "DataManagement-screen"
+      }
+    },
+    "input": {
+      "id": "EL002",
+      "name": "Campo Secure",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "data-secure-input"
+      }
+    },
+    "readout": {
+      "id": "EL003",
+      "name": "Leitura Secure",
+      "type": "text",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "data-secure-readout"
+      }
+    },
+    "save": {
+      "id": "EL004",
+      "name": "Botão Save Secure",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-data-secure-save"
+      }
+    },
+    "clear": {
+      "id": "EL005",
+      "name": "Botão Clear Secure",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-data-secure-clear"
+      }
+    }
+  }
+}

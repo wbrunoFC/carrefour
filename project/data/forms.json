@@ -1,0 +1,19 @@
+{
+  "domain": "FORMS",
+  "cases": [
+    {
+      "scenarioId": "FORMS-FORMS-001",
+      "input": {
+        "text": "Hello"
+      },
+      "expected": "Hello"
+    },
+    {
+      "scenarioId": "FORMS-FORMS-001",
+      "input": {
+        "text": "Hello world"
+      },
+      "expected": "Hello world"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "page": "data-in-memory",
+  "platform": "ios",
+  "elements": {
+    "screen": {
+      "id": "EL001",
+      "name": "Tela Data Management",
+      "type": "screen",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "DataManagement-screen"
+      }
+    },
+    "input": {
+      "id": "EL002",
+      "name": "Campo in-memory",
+      "type": "input",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "data-memory-input"
+      }
+    },
+    "readout": {
+      "id": "EL003",
+      "name": "Leitura in-memory",
+      "type": "text",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "data-memory-readout"
+      }
+    },
+    "save": {
+      "id": "EL004",
+      "name": "Botão Save in-memory",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-data-memory-save"
+      }
+    },
+    "clear": {
+      "id": "EL005",
+      "name": "Botão Clear in-memory",
+      "type": "button",
+      "selector": {
+        "strategy": "accessibilityId",
+        "value": "button-data-memory-clear"
+      }
+    }
+  }
+}
