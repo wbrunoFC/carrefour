@@ -45,6 +45,14 @@ jobs:
           curl -fsSL -o apps/v2.2.0/android/android.wdio.native.app.v2.2.0.apk \
             https://github.com/webdriverio/native-demo-app/releases/download/v2.2.0/android.wdio.native.app.v2.2.0.apk
 
+      - name: Upload APK to BrowserStack
+        run: |
+          APP_RESPONSE=$(curl -sf -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" \
+            -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
+            -F "file=@apps/v2.2.0/android/android.wdio.native.app.v2.2.0.apk" \
+            -F "custom_id=wdio-demo-android")
+          echo "BROWSERSTACK_APP_ID=$(echo "$APP_RESPONSE" | jq -r .app_url)" >> "$GITHUB_ENV"
+
       - name: Run Android E2E slice on BrowserStack
         run: >
           npm run test:android:bs --

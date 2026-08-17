@@ -1,6 +1,7 @@
 import {
   ANDROID_APP_PACKAGE,
   ANDROID_APP_PATH,
+  BROWSERSTACK_ANDROID_APP_CUSTOM_ID,
   BROWSERSTACK_PROJECT_NAME,
 } from '../constants/app-artifacts';
 import { useBrowserStackLocalTunnel } from '../environment/execution-target';
@@ -32,13 +33,16 @@ export function buildAndroidLocalCapabilities(
 export function buildAndroidBrowserStackCapabilities(
   options: AndroidCapabilityOptions,
 ): WebdriverIO.Capabilities[] {
-  const appPath = resolveAndroidAppPath();
+  const browserStackApp =
+    process.env.BROWSERSTACK_APP_ID ??
+    process.env.BROWSERSTACK_APP_CUSTOM_ID ??
+    BROWSERSTACK_ANDROID_APP_CUSTOM_ID;
 
   return [
     {
       platformName: 'Android',
       'appium:automationName': 'UiAutomator2',
-      'appium:app': process.env.BROWSERSTACK_APP_ID || appPath,
+      'appium:app': browserStackApp,
       'appium:autoGrantPermissions': true,
       'appium:newCommandTimeout': options.commandTimeoutSeconds,
       'bstack:options': {

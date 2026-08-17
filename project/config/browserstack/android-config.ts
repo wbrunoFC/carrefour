@@ -1,7 +1,5 @@
-import {
-  buildAndroidBrowserStackCapabilities,
-  resolveAndroidAppPath,
-} from '../capabilities/android-capabilities';
+import { BROWSERSTACK_ANDROID_APP_CUSTOM_ID } from '../constants/app-artifacts';
+import { resolveAndroidAppPath, buildAndroidBrowserStackCapabilities } from '../capabilities/android-capabilities';
 import { E2E_COMMAND_TIMEOUT_SEC } from '../constants/timeouts';
 import { wdioBaseConfig } from '../shared/wdio-base.config';
 import { resolveBrowserStackAppOption } from './app-option';
@@ -19,7 +17,7 @@ export function buildAndroidBrowserStackConfig() {
     hostname: 'hub.browserstack.com',
     services: [
       createBrowserStackService(
-        resolveBrowserStackAppOption(appPath, 'wdio-demo-android'),
+        resolveBrowserStackAppOption(appPath, BROWSERSTACK_ANDROID_APP_CUSTOM_ID),
       ),
     ],
     capabilities: buildAndroidBrowserStackCapabilities({

@@ -24,3 +24,4 @@ export const ANDROID_APP_PACKAGE = 'com.wdiodemoapp';
 export const IOS_BUNDLE_ID = 'org.wdiodemoapp';
 
 export const BROWSERSTACK_PROJECT_NAME = 'carrefour-qa';
+export const BROWSERSTACK_ANDROID_APP_CUSTOM_ID = 'wdio-demo-android';
