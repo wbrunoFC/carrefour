@@ -18,9 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
-      BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-      BROWSERSTACK_LOCAL: 'false'
+      ALLURE_OPEN: 'false'
     steps:
       - uses: actions/checkout@v4
 
@@ -38,20 +36,37 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Install Appium UiAutomator2 driver
+        run: npx appium driver install --source=npm appium-uiautomator2-driver
+
       - name: Fetch demo APK
         run: |
           mkdir -p apps/v2.2.0/android
           curl -fsSL -o apps/v2.2.0/android/android.wdio.native.app.v2.2.0.apk \
             https://github.com/webdriverio/native-demo-app/releases/download/v2.2.0/android.wdio.native.app.v2.2.0.apk
 
-      - name: Run slice on BrowserStack Android
-        run: >
-          npm run test:android:bs --
-          --spec tests/e2e/authentication/login/login.test.ts
-          --spec tests/e2e/authentication/signup/signup.test.ts
-          --spec tests/e2e/home/home/home.test.ts
-          --spec tests/e2e/navigation/side-menu/side-menu.test.ts
-          --spec tests/e2e/forms/forms/forms.test.ts
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run Android E2E slice
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          disable-animations: true
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
+          script: |
+            cd project
+            npm run test:android -- \
+              --spec tests/e2e/authentication/login/login.test.ts \
+              --spec tests/e2e/authentication/signup/signup.test.ts \
+              --spec tests/e2e/home/home/home.test.ts \
+              --spec tests/e2e/navigation/side-menu/side-menu.test.ts \
+              --spec tests/e2e/forms/forms/forms.test.ts
 
       - name: Upload Allure evidence
         if: always()
