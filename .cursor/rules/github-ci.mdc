@@ -1,0 +1,19 @@
+---
+description: Consultar falhas da pipeline e2e-android via GitHub MCP (toolset actions)
+alwaysApply: true
+---
+
+# Pipeline homologation (GitHub MCP)
+
+Repo: `wbrunoFC/carrefour`. Workflow: `e2e-android` (`.github/workflows/e2e-android.yml`).
+
+When CI fails, user asks pipeline status, or homologation needs evidence: **do not wait for pasted logs**. Use GitHub MCP (`user-github` or project `github`) with toolset `actions`.
+
+1. `GetMcpTools` on the GitHub server; prefer `actions_list` / `actions_get` (or `list_workflow_runs` / `get_job_logs` if those names appear).
+2. List runs for `e2e-android.yml` on `main` (and open PRs). Filter failed.
+3. List jobs of the failed run, then fetch job logs.
+4. Quote the shortest failing line. Fix root cause. Re-check the next run.
+
+Auth: PAT in Cursor MCP (`GITHUB_PERSONAL_ACCESS_TOKEN` in env for project `.cursor/mcp.json`; global `~/.cursor/mcp.json` already has GitHub). PAT needs `repo` + `workflow` (classic) or Actions read.
+
+Never commit PATs. Never dump full logs unless asked.
