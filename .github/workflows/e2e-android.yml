@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Install Appium UiAutomator2 driver
-        run: npx appium driver install --source=npm appium-uiautomator2-driver
+        run: npx appium driver install uiautomator2
 
       - name: Fetch demo APK
         run: |
