@@ -167,6 +167,7 @@ Formato obrigatório:
 | `swipe/` | `SWIPE` |
 | `drag/` | `DRAG` |
 | `permissions/` | `PERMISSIONS` |
+| `produtos/` | `PRODUTOS` |
 
 Novo domínio no repo ⇒ adicionar linha nesta tabela **antes** de criar Scenario ID.
 
